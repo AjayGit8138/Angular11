@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="nav nav-pills">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a class="nav-link" routerLink="Home" routerLinkActive="active"
+                            [routerLinkActiveOptions]="{exact:true}">Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" routerLink="Product" routerLinkActive="active">Product</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" routerLink="Contact" routerLinkActive="active">Contact</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" routerLink="empform" routerLinkActive="active">Empform</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" routerLink="books"
+                            routerLinkActive="active">Bookproject</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-9">
+    <div class="container">
+        <div class="row">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
