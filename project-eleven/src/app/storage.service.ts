@@ -67,7 +67,7 @@ export class StorageService {
   }
   getBooks()
   {
-    return this.array;
+    return this.booklist;
     
   }
   addbook(book:any)
