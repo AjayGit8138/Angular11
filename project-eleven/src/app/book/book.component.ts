@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { AppRoutingModule } from '../app-routing.module';
+import { Router } from '@angular/router';
 
 @Component({
  selector: 'app-book',
@@ -10,12 +12,16 @@ export class BookComponent implements OnInit {
  book:any;
  @Input()
  idx: number = 0;
- constructor() { }
+ constructor(private router: Router) { }
 
  ngOnInit(): void {
  }
  onbuy(book: any) {
   console.log('Book Added to the Cart...' + book.name + ' ' + 'Rupees:' + book.price);
   console.log(book);
+ }
+ addbook()
+ {
+    this.router.navigate(['addbook']);
  }
 }

@@ -1,29 +1,42 @@
-<div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="nav nav-pills">
-                <ul class="nav nav-pills">
-                    <li class="nav-item"><a class="nav-link" routerLink="Home" routerLinkActive="active"
-                            [routerLinkActiveOptions]="{exact:true}">Home</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" routerLink="Product" routerLinkActive="active">Product</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" routerLink="Contact" routerLinkActive="active">Contact</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" routerLink="empform" routerLinkActive="active">Empform</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" routerLink="books"
-                            routerLinkActive="active">Bookproject</a>
-                    </li>
-                </ul>
+<nav class="navbar navbar-dark fixed-top bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="nav nav-pills">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item"><a class="nav-link" routerLink="Home" routerLinkActive="active"
+                                [routerLinkActiveOptions]="{exact:true}">Home</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" routerLink="Product"
+                                routerLinkActive="active">About</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" routerLink="Contact"
+                                routerLinkActive="active">Contact</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" routerLink="empform"
+                                routerLinkActive="active">Empform</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" routerLink="books"
+                                routerLinkActive="active">Bookproject</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" routerLink="pcrform"
+                                routerLinkActive="active">Pcrtestreport</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="col-md-9">
-    <div class="container">
-        <div class="row">
-            <router-outlet></router-outlet>
+</nav>
+<div class="routingcontent">
+    <div class="col-md-12">
+        <div class="container">
+            <div class="row">
+                <br><br><br><br><br>
+                <div class="router" [@routeAnimation]="getanimation(myOutlet)">
+                    <router-outlet #myOutlet="outlet"></router-outlet>
+                </div>
+            </div>
         </div>
     </div>
 </div>

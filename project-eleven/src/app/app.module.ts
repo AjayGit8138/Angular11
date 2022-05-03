@@ -1,10 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {MatButtonModule} from '@angular/material/button';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsDemoComponent } from './forms-demo/forms-demo.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { EmpformComponent } from './empform/empform.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
@@ -18,6 +18,11 @@ import { BookComponent } from './book/book.component';
 import { BookListComponent } from './book-list/book-list.component';
 import { TabComponent } from './tab/tab.component';
 import { PriceDiscountPipe } from './price-discount.pipe';
+import { PcrformComponent } from './pcrform/pcrform.component';
+import { TableViewComponent } from './table-view/table-view.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BlogComponent } from './blog/blog.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -34,11 +39,14 @@ import { PriceDiscountPipe } from './price-discount.pipe';
     BookComponent,
     BookListComponent,
     TabComponent,
-    PriceDiscountPipe
+    PriceDiscountPipe,
+    PcrformComponent,
+    TableViewComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,ReactiveFormsModule, NgbModule
+    AppRoutingModule,ReactiveFormsModule, NgbModule,FormsModule,BrowserAnimationsModule,MatButtonModule,MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

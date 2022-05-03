@@ -1,0 +1,81 @@
+<div class="main bgimage">
+    <div *ngIf="setbool;else othercontent">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Angulra-11 webdevelopment</h1>
+                    <div class="container">
+
+                        <button (click)="navigate()" mat-raised-button color="accent">NavigateProject</button>
+
+                    </div>
+                    <!-- <img class="img" [src]="angularbanner"> -->
+                </div>
+            </div>
+        </div>
+        <div class="container trans">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <img class="img-thumbnail" [src]="itemImageUrl" alt="angularpic">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="font-weight-bolder">Abstract</h2>
+                    <p class="font-weight-bolder">I'm Ajay Prasath.M working as InternProgrammer In Chainsys,I Like to
+                        Describe My self,As of now
+                        i'm
+                        completed a training in HTML,CSS and JAVASCRIPT.
+
+                    </p>
+                    <p class="font-weight-bolder">
+                        Here I'm started My Coding Development Practice Under Angular Development, Based Upon the
+                        Javascript
+                        and
+                        css.Here I'm learning Development Under
+                        Angular@11 Version.Being as Beginner I have covered basic much needed topics learned with a
+                        Practical
+                        Development Practice.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="container transone">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="font-weight-bolder">Skills Gained</h2>
+                    <p class="font-weight-bolder">The Angular is a Single Page-WebDevelopemt Implements the concepts of
+                        Component and
+                        Modules,Routing
+                        Etc.
+                        The Entire UI Development is appered through the Component,Which Gives the UI Interaction to the
+                        User.And Internal Functional Activites which Done by Typescript and services.
+                    </p>
+                    <p class="font-weight-bolder">The Well-Knowed Angular Building Commands and Compiling Commands are
+                        Implemented throught the
+                        Projects.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-thumbnail" [src]="skills">
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="font-weight-bolder">Traning Projects</h1>
+                    <p class="font-weight-bold">As I'm a Intern I have Learned,How to Build a real Time applications
+                        with Angular throughout the
+                        Basic
+                        concepts,Here I'm created various UI Components with angular web Projects.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ng-template #othercontent>
+        <app-links></app-links>
+    </ng-template>
+</div>
