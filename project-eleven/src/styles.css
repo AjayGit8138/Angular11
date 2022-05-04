@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('../node_modules/bootstrap/dist/css/bootstrap.css');
-@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
 .router{
     position: relative;
 }
@@ -14,7 +14,7 @@
 html, body { height: auto; }
 body {
      margin: 0; 
-     font-family: 'Oxygen', sans-serif;
+     font-family: 'Poppins', sans-serif !important;
      background-image: url('./images/yellowbanner.jpg');
      background-repeat: no-repeat;
      background-size: cover;
