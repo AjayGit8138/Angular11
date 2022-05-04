@@ -21,18 +21,21 @@ body {
      font-size: large;
      }
 p{
+    
+    font-size: 20px;
+}
+h2{
     font-weight: bold;
     font-size: 20px;
 }
-
 @keyframes transitionIn {
     from{
         opacity: 0;
-        transform: rotateX(60deg);
+        transform: rotateY(80deg);
     }
     to{
         opacity: 1;
-        transform: rotateY(18deg);
+        transform: rotateX(30deg);
 
     }
 }
@@ -42,11 +45,11 @@ p{
 @keyframes transitiontwo {
     from{
         opacity: 0;
-        transform: rotateY(60deg)
+        transform: rotateY(80deg)
     }
     to{
         opacity: 1;
-        transform: rotateX(20deg);
+        transform: rotateX(30deg);
     }
 }
 .transone{
